@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100%;
+    background-color: #40A2D8;
+}
+
+.container,.task-list{
+    max-width: 400px;
+    height: 200px;
+    padding: 0 2%;
+    margin: 20px auto 0 auto;
+    background-color: white;
+}
+
+form{
+    padding-top: 30px;
+}
+
+form h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"]{
+    width: calc(100% - 48px);
+    height: 38px;
+    padding-left: 8px;
+    border: 2px solid #FFCF81;
+    outline: 0;
+}
+
+[type=submit]{
+    background-color: #40A2D8;
+    padding: 0 14px;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.task-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 28px 10px;
+}
+
+.task-single{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px;
+    border: 2px solid #40A2D8;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.task-single:last-child{
+    margin-bottom: 0;
+}
+
+.task-single span{
+    width: 80%;
+    
+}
+
+.task-single a{
+    width: 20%;
+    text-decoration: none;
+    background-color: rgba(255, 25, 20, 1);
+    text-align: center;
+    color: white;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
